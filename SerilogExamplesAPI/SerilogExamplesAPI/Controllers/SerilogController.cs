@@ -15,16 +15,16 @@ public class SerilogController(ILogger<SerilogController> logger) : ControllerBa
     public async Task<ActionResult<IEnumerable<string>>> Get()
     {
         // An e-mail address in text
-        logger.LogInformation("This is a secret email address: james.bond@universal-exports.co.uk");
+        logger.LogInformation("This is a secret email address: test@test.co.uk");
 
         // Works for properties too
-        logger.LogInformation("This is a secret email address: {Email}", "james.bond@universal-exports.co.uk");
+        logger.LogInformation("This is a secret email address: {Email}", "test@test.co.uk");
 
         // IBANs are also masked
-        logger.LogInformation("Bank transfer from Felix Leiter on NL02ABNA0123456789");
+        logger.LogInformation("Bank transfer from Felix Leiter on TR330006100519700007840000");
 
         // IBANs are also masked
-        logger.LogInformation("Bank transfer from Felix Leiter on {BankAccount}", "NL02ABNA0123456789");
+        logger.LogInformation("Bank transfer from Felix Leiter on {BankAccount}", "TR330006100519700007840000");
 
         // Credit card numbers too
         logger.LogInformation("Credit Card Number: 4111111111111111");
@@ -38,10 +38,10 @@ public class SerilogController(ILogger<SerilogController> logger) : ControllerBa
         logger.LogInformation("Object dump with embedded credit card: {x}", x);
 
         //GSM Number
-        logger.LogInformation("GSM Number: 5325109597");
+        logger.LogInformation("GSM Number: 565009098");
 
         //Custom
-        logger.LogInformation("This is a CUSTOM_PROPERTY sensitive {CUSTOM_PROPERTY}", "Denemeeeeeee");
+        logger.LogInformation("This is a CUSTOM_PROPERTY sensitive {CUSTOM_PROPERTY}", "Deneme");
 
         if (!Directory.Exists("Logs"))
         {
