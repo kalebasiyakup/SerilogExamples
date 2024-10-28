@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.user
+*.suo
+/.vs/SerilogExamples/v17
+/SerilogExamplesAPI/SerilogExamplesAPI/obj
+/SerilogExamplesAPI/SerilogExamplesAPI/bin
+/SerilogExamplesAPI/.vs/SerilogExamplesAPI/FileContentIndex
