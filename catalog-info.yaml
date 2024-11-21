@@ -5,7 +5,7 @@ metadata:
     description: A C# Serilog Library
     annotations:
         backstage.io/techdocs-ref: dir:.
-        github.com/project-slug: pep8speaks-org/pep8speaks
+        github.com/project-slug: kalebasiyakup/SerilogExamples
     tags:
         - c#
     links:
