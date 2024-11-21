@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: SerilogExamples
+    description: A C# Serilog Library
+    annotations:
+        backstage.io/techdocs-ref: dir:.
+        github.com/project-slug: pep8speaks-org/pep8speaks
+    tags:
+        - c#
+    links:
+        - url: https://github.com/kalebasiyakup
+          title: Github Dashboard
+          icon: dashboard
+          type: admin-dashboard
+spec:
+    type: service
+    lifecycle: production
+    owner: yakupkalebasi
+    system: github-project
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+    name: github-project
+    description: github-project info
+spec:
+    owner: yakupkalebasi
+    domain: infa
